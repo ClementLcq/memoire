@@ -1,0 +1,106 @@
+@import"https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redacted+Script:wght@300;400;700&display=swap";
+.nav__link a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #067863;
+    text-decoration: none;
+    font-family: "Noto Sans Display", sans-serif;
+    padding: 5px 10px 5px 10px
+}
+
+.nav__link a:hover {
+    color: #067863;
+    text-transform: uppercase
+}
+
+.nav {
+    background-color: #0cf7cc
+}
+
+.nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    list-style-type: none;
+    padding: 1rem;
+    height: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #067863
+}
+
+.heading {
+    color: #067863;
+    font-family: "Redacted Script", cursive;
+    padding: 8rem;
+    font-size: 4rem;
+    font-weight: 800
+}
+
+.heading:hover {
+    color: #4b6efb
+}
+
+#proj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+}
+
+.proj-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid #067863;
+    padding: 1rem;
+    height: 1rem;
+    width: auto;
+    font-family: "Noto Sans Display", sans-serif;
+    color: #067863;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center
+}
+
+.proj-prev__heading {
+    font-size: 1rem
+}
+
+.proj-prev:hover {
+    background-color: #067863;
+    color: #0cf7cc
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+main {
+    background-color: #0cf7cc
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3Nhc3MvQmFzZS9fdHlwb2dyYXBoeS5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFRLDhPQUFBO0FDQ1I7SUFDSSxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxxQkFBcUI7SUFDckIsNENBQTRDO0lBQzVDO0FBQ0o7O0FBRUE7SUFDSSxjQUFjO0lBQ2Q7QUFDSjs7QUFFQTtJQUNJO0FBQ0o7O0FBRUE7SUFDSSxvQkFBYTtJQUFiLG9CQUFhO0lBQWIsYUFBYTtJQUNiLDhCQUFtQjtJQUFuQiw2QkFBbUI7UUFBbkIsdUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix1QkFBMkI7UUFBM0Isb0JBQTJCO1lBQTNCLDJCQUEyQjtJQUMzQixxQkFBcUI7SUFDckIsYUFBYTtJQUNiLFlBQVk7SUFDWix5QkFBbUI7UUFBbkIsc0JBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQjtBQUNKOztBQUVBO0lBQ0ksY0FBYztJQUNkLHVDQUF1QztJQUN2QyxhQUFhO0lBQ2IsZUFBZTtJQUNmO0FBQ0o7O0FBRUE7SUFDSTtBQUNKOztBQUVBO0lBQ0ksb0JBQWE7SUFBYixvQkFBYTtJQUFiLGFBQWE7SUFDYiw0QkFBc0I7SUFBdEIsNkJBQXNCO1FBQXRCLDBCQUFzQjtZQUF0QixzQkFBc0I7SUFDdEIsdUJBQTJCO1FBQTNCLG9CQUEyQjtZQUEzQiwyQkFBMkI7SUFDM0IsbUJBQWM7UUFBZDtBQUNKOztBQUVBO0lBQ0ksb0JBQWE7SUFBYixvQkFBYTtJQUFiLGFBQWE7SUFDYiw4QkFBbUI7SUFBbkIsNkJBQW1CO1FBQW5CLHVCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIseUJBQThCO1FBQTlCLHNCQUE4QjtZQUE5Qiw4QkFBOEI7SUFDOUIsNkJBQTZCO0lBQzdCLGFBQWE7SUFDYixZQUFZO0lBQ1osV0FBVztJQUNYLDRDQUE0QztJQUM1QyxjQUFjO0lBQ2QseUJBQWtCO1FBQWxCLHNCQUFrQjtZQUFsQjtBQUNKOztBQUVBO0lBQ0k7QUFDSjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QjtBQUNKOztBQUVBO0lBQ0ksVUFBVTtJQUNWO0FBQ0o7O0FBRUE7SUFDSTtBQUNKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

@@ -1,0 +1,45 @@
+@mixin heading {
+    color: $colour-primary;
+    font-family: 'Redacted Script', cursive;
+    padding: 8rem;
+    font-size: map-get($map: $font-size, $key: heading);
+    font-weight: map-get($map: $font-weight, $key: heading)
+}
+
+.heading {
+    @include heading();
+    &:hover {
+        color: $colour-accent-light;
+    }
+}
+
+#proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@mixin proj-prev ($colour:$colour-primary) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid $colour;
+    padding: 1rem;
+    height: 1rem;
+    width: auto;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: $colour;
+    align-items: center;
+}
+
+.proj-prev {
+    @include proj-prev();
+    &__heading {
+        font-size: map-get($font-size, project-heading);
+    }
+    &:hover {
+        background-color: $colour-primary;
+        color: $colour-secondary;
+    }
+}
