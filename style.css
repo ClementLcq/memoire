@@ -1,0 +1,94 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'chaumont';
+    src: url('fonts/Chaumont_scriptBeta-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Moche-bold';
+    src: url('fonts/Moche-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Moche-regular';
+    src: url('fonts/Moche-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Moche-light';
+    src: url('fonts/Moche-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'terminal-grotesque-webfont';
+    src: url('fonts/terminal-grotesque-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'blackout-midnight-webfont';
+    src: url('fonts/blackout-midnight-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular-webfont';
+    src: url('fonts/Roboto-Regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Thin-webfont';
+    src: url('fonts/Roboto-Thin-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Black-webfont';
+    src: url('fonts/Roboto-Black-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium-webfont';
+    src: url('fonts/Roboto-Medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Basteleur-Bold';
+    src: url('fonts/Basteleur-Bold.woff') format('woff');
+}
+
+
+/* SCROLLBAR */
+
+
+/* Works on Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FA844D #000440;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000440;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FA844D;
+}
+
+
+/* UNIVERSEL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
