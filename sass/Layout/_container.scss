@@ -74,7 +74,7 @@
 
 @mixin part-prev {
     width: 20%;
-    border: $border;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -85,14 +85,19 @@
     color: $colour-secondary;
     background-color: $colour-primary;
     text-transform: uppercase;
-    font-size: map-get($map: $font-size, $key: project-heading);
-    font-weight: map-get($map: $font-weight, $key: project-heading);
+    border: $border;
+    transform: scale(1);
+    transition: transform 400ms;
+    cursor: pointer;
 }
 
 @mixin part-prev__chapter {
     padding: 1rem;
-    font-size: map-get($map: $font-size, $key: label);
-    font-weight: map-get($map: $font-weight, $key: label)
+    border-bottom: $border-bottom;
+    text-transform: capitalize;
+    transform: scale(1);
+    transition: transform 400ms;
+    cursor: pointer;
 }
 
 .part-prev {
@@ -102,8 +107,16 @@
     }
     &__heading {
         @include part-prev__heading();
+        &:hover {
+            transform: scale(1.1);
+            color: $colour-secondary;
+            background-color: $colour-tertiary;
+        }
     }
     &__chapter {
         @include part-prev__chapter();
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

@@ -13,3 +13,13 @@ main {
     background-color: $colour-secondary;
     font-family: 'Noto Sans Display';
 }
+
+h2 {
+    font-size: map-get($map: $font-size, $key: project-heading);
+    font-weight: map-get($map: $font-weight, $key: project-heading);
+}
+
+h3 {
+    font-size: map-get($map: $font-size, $key: label);
+    font-weight: map-get($map: $font-weight, $key: label);
+}
