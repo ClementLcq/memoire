@@ -4,13 +4,13 @@
     font-weight: map-get($map: $font-weight, $key: heading);
     text-transform: uppercase;
     width: 100%;
-    border-right: 1px solid $colour-primary;
+    border-right: $border-right;
     padding: 2rem;
 }
 
 @mixin title__description {
     width: 50%;
-    border-right: 1px solid $colour-primary;
+    border-right: $border-right;
     padding: 2rem;
 }
 
@@ -22,7 +22,7 @@
 .title {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid $colour-primary;
+    border-bottom: $border-bottom;
     &__heading {
         @include title__heading();
     }
@@ -35,12 +35,13 @@
 }
 
 @mixin quote__text {
-    color: $colour-tertiary;
+    color: $colour-primary;
     font-size: map-get($map: $font-size, $key: quote);
 }
 
 .quote {
     padding: 5rem;
+    border-bottom: $border-bottom;
     @include quote__text();
 }
 
@@ -53,6 +54,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: $border-bottom;
     &__text {
         @include intro__text();
     }
@@ -62,7 +64,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 @mixin part-prev__image {
@@ -71,12 +74,36 @@
 
 @mixin part-prev {
     width: 20%;
-    border: 1px solid $colour-primary;
+    border: $border;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin part-prev__heading {
+    padding: 1rem;
+    color: $colour-secondary;
+    background-color: $colour-primary;
+    text-transform: uppercase;
+    font-size: map-get($map: $font-size, $key: project-heading);
+    font-weight: map-get($map: $font-weight, $key: project-heading);
+}
+
+@mixin part-prev__chapter {
+    padding: 1rem;
+    font-size: map-get($map: $font-size, $key: label);
+    font-weight: map-get($map: $font-weight, $key: label)
 }
 
 .part-prev {
     @include part-prev();
     &__image {
         @include part-prev__image();
+    }
+    &__heading {
+        @include part-prev__heading();
+    }
+    &__chapter {
+        @include part-prev__chapter();
     }
 }
