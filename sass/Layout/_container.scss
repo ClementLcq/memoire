@@ -1,45 +1,82 @@
-@mixin heading {
+@mixin title__heading {
     color: $colour-primary;
-    font-family: 'Redacted Script', cursive;
-    padding: 8rem;
     font-size: map-get($map: $font-size, $key: heading);
-    font-weight: map-get($map: $font-weight, $key: heading)
+    font-weight: map-get($map: $font-weight, $key: heading);
+    text-transform: uppercase;
+    width: 100%;
+    border-right: 1px solid $colour-primary;
+    padding: 2rem;
 }
 
-.heading {
-    @include heading();
-    &:hover {
-        color: $colour-accent-light;
+@mixin title__description {
+    width: 50%;
+    border-right: 1px solid $colour-primary;
+    padding: 2rem;
+}
+
+@mixin title__thx {
+    width: 50%;
+    padding: 2rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid $colour-primary;
+    &__heading {
+        @include title__heading();
+    }
+    &__description {
+        @include title__description();
+    }
+    &__thx {
+        @include title__thx();
     }
 }
 
-#proj {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+@mixin quote__text {
+    color: $colour-tertiary;
+    font-size: map-get($map: $font-size, $key: quote);
 }
 
-@mixin proj-prev ($colour:$colour-primary) {
+.quote {
+    padding: 5rem;
+    @include quote__text();
+}
+
+@mixin intro__text {
+    padding: 2rem;
+    width: 90%;
+}
+
+.intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: 1px solid $colour;
-    padding: 1rem;
-    height: 1rem;
-    width: auto;
-    font-family: 'Noto Sans Display', sans-serif;
-    color: $colour;
-    align-items: center;
+    &__text {
+        @include intro__text();
+    }
 }
 
-.proj-prev {
-    @include proj-prev();
-    &__heading {
-        font-size: map-get($font-size, project-heading);
-    }
-    &:hover {
-        background-color: $colour-primary;
-        color: $colour-secondary;
+#part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@mixin part-prev__image {
+    width: 100%;
+}
+
+@mixin part-prev {
+    width: 20%;
+    border: 1px solid $colour-primary;
+}
+
+.part-prev {
+    @include part-prev();
+    &__image {
+        @include part-prev__image();
     }
 }
